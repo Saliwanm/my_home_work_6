@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app_ping:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: hw6
+    volumes:
+      - ./:/app
